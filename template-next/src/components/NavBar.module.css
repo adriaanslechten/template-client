@@ -1,0 +1,40 @@
+/* src/components/NavBar.module.css */
+
+.Sidebar {
+  width: 250px;
+  background-color: #333333; /* Darker gray background */
+  padding-left: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.NavList {
+  list-style: none;
+  padding: 0;
+}
+
+.NavItem {
+  margin-bottom: 15px;
+  margin-left: -15px; /* Adjust margin to align with full width */
+}
+
+.NavLink {
+  display: block;
+  padding: 10px; /* Added padding for better spacing */
+  color: #f5f5f5; /* Light gray text color */
+}
+
+.NavLink:hover {
+  background-color: #4d4d4d; /* Slightly darker gray hover background */
+  color: #ffffff; /* White text on hover */
+}
+
+.active {
+  background-color: #808080; /* Medium gray active background */
+  color: #ffffff; /* White text for active link */
+}
