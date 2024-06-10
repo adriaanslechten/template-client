@@ -1,51 +1,12 @@
+/* Home.module.css */
 .Content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff; /* Ensure the background is white */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .CardContainer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
-  }
-
-  .Card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left; /* Align text to the left */
-  }
-
-  .Card:first-child {
-    background-color: #f5f5f5; /* Light grey background for the first card */
-  }
-
-  .Card:last-child {
-    background-color: #e0f7fa; /* Light blue background for the second card */
-  }
-
-  .Card img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-  }
-
-  .Card h2 {
-    margin-top: 0;
-    color: #2c3e50;
-    text-align: left; /* Align title to the left */
-    width: 100%;
-  }
-
-  .Card p {
-    color: #7f8c8d;
-  }
+.CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}

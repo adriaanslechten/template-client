@@ -3,29 +3,29 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import styles from "./NavBar.module.css";
+import styles from "./TopNavBar.module.css";
 
-const NavBar: React.FC = () => {
+const TopNavBar: React.FC = () => {
   const router = useRouter();
 
   return (
-    <nav className={styles.Sidebar}>
+    <nav className={styles.NavBar}>
       <ul className={styles.NavList}>
         <li className={styles.NavItem}>
           <Link href="/" passHref>
-            <span className={`${styles.NavLink} ${router.pathname === "/" ? styles.active : ""}`}>Home</span>
+            <div className={`${styles.NavLink} ${router.pathname === "/" ? styles.active : ""}`}>Home</div>
           </Link>
         </li>
         <li className={styles.NavItem}>
           <Link href="/login" passHref>
-            <span className={`${styles.NavLink} ${router.pathname === "/login" ? styles.active : ""}`}>Login</span>
+            <div className={`${styles.NavLink} ${router.pathname === "/login" ? styles.active : ""}`}>Login</div>
           </Link>
         </li>
         <li className={styles.NavItem}>
           <Link href="/leaderboard" passHref>
-            <span className={`${styles.NavLink} ${router.pathname === "/leaderboard" ? styles.active : ""}`}>
+            <div className={`${styles.NavLink} ${router.pathname === "/leaderboard" ? styles.active : ""}`}>
               Leaderboard
-            </span>
+            </div>
           </Link>
         </li>
       </ul>
@@ -33,4 +33,4 @@ const NavBar: React.FC = () => {
   );
 };
 
-export default React.memo(NavBar);
+export default React.memo(TopNavBar);

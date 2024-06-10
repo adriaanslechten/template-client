@@ -1,0 +1,49 @@
+/* styles/Leaderboard.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;  /* Ensure contrast with a possible dark navbar */
+  width: calc(100% - 250px);  /* Assuming the sidebar width is 250px */
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto 20px 270px; /* Offset the container to the right of the navbar */
+}
+
+.list {
+  width: 100%;
+}
+
+.item {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  cursor: pointer;  /* Indicate clickable items */
+}
+
+.item:hover {
+  background-color: #e8e8e8;
+}
+
+.link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  flex-grow: 1;  /* Ensure the link takes the available space */
+}
+
+.score {
+  font-weight: bold;
+  color: #666;
+}

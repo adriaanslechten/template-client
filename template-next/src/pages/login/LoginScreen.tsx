@@ -1,4 +1,4 @@
-export const Login: React.FC = () => {
+export const LoginScreen: React.FC = () => {
   return (
     <div className="Content">
       <h1>Login</h1>

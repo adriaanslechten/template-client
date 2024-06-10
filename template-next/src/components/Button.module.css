@@ -1,0 +1,23 @@
+/* components/Button.module.css */
+.button {
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    padding: 15px;
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: white; /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    line-height: 21px;
+    display: flex; /* Flexbox for center alignment */
+    justify-content: center; /* Center content horizontally */
+    width: 100%; /* Full width */
+  }
+
+  .disabled {
+    background-color: #ccc; /* Light grey background for disabled state */
+    cursor: not-allowed; /* Cursor indicates disabled state */
+  }

@@ -1,26 +1,29 @@
 /* src/components/NavBar.module.css */
 
-.Sidebar {
-  width: 250px;
+.NavBar {
+  width: 100%;
   background-color: #ffffff; /* Updated to white for a cleaner look */
-  padding-left: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for a subtle effect */
-  height: 100vh;
+  height: 50px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   position: fixed;
-  top: 50px; /* Start below the TopNavBar */
+  top: 0;
   left: 0;
-  border-right: 1px solid #eaeaea; /* Subtle border line to define the sidebar */
+  z-index: 1000; /* Make sure it stays on top */
+  border: 1px solid #eaeaea; /* Subtle border line to define the sidebar */
 }
+
 .NavList {
   list-style: none;
   padding: 0;
+  margin: 0; /* No margin */
+  display: flex; /* Horizontal layout */
+  width: 100%; /* Ensure it takes up full container width */
+  margin-left: 30px;
 }
 
 .NavItem {
-  margin-bottom: 15px;
-  margin-left: -15px;
+  margin-right: 20px; /* Space between items */
 }
 
 .NavLink {
@@ -31,13 +34,13 @@
   transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effects */
 }
 
-.NavLink:hover {
+.NavLink:hover,
+.NavLink:active {
   background-color: #f0f0f0; /* Light gray background on hover for subtlety */
   color: #000; /* Black text on hover for contrast */
 }
 
 .active {
-  background-color: #eaeaea; /* Light gray background for active state */
   color: #000; /* Black text for active link */
   font-weight: bold; /* Bold text for active link */
 }

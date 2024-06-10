@@ -1,5 +1,5 @@
-
 .mainContent {
+  margin-top: 50px; /* Adjust based on the height of your TopNavBar */
   margin-left: 320px; /* Adjust according to the width of the Sidebar */
   padding: 20px;
 }
